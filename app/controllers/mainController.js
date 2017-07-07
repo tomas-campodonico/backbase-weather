@@ -13,32 +13,11 @@
   function MainController(Weather) {
     var ctrl = this;
 
-    ctrl.cities = [{
-      name: 'London'
-    }, {
-      name: 'Paris'
-    }, {
-      name: 'Amsterdam'
-    }, {
-      name: 'Dublin'
-    }, {
-      name: 'Cardiff'
-    }];
-
-
-    ////////////  function definitions
-
-
     /**
-     * Load some data
-     * @return {Object} Returned object
+     * Load cities data
      */
-    // QueryService.query('GET', 'posts', {}, {})
-    //   .then(function(ovocie) {
-    //     self.ovocie = ovocie.data;
-    //   });
-    Weather.getAll(this.cities, function(data) {
-      ctrl.cities = data;
+    Weather.getAll(function(cities) {
+      ctrl.cities = cities;
     });
   }
 

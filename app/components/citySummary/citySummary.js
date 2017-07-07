@@ -6,7 +6,7 @@
   angular
     .module('backbase')
     .component('citySummary', {
-      templateUrl: 'app/components/citySummary/citySummary.html',
+      templateUrl: '/city-summary.html',
       bindings: {
         city: '='
       },

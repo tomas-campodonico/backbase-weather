@@ -19,13 +19,13 @@
       .when('/', {
         controller: 'MainController',
         controllerAs: 'vm',
-        templateUrl: 'app/views/home.html'
+        templateUrl: '/home.html'
       })
 
       .when('/forecast', {
         controller: 'ForecastController',
         controllerAs: 'vm',
-        templateUrl: 'app/views/forecast.html'
+        templateUrl: '/forecast.html'
       })
       .otherwise({
         redirectTo: '/'
